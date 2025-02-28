@@ -1,0 +1,38 @@
+#startgrid{
+    width: 98.7vw;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15vh 100vh 80vh 30vh;
+    grid-template-areas: 
+    'hd hd'
+    'sk bd'
+    'a1 a2'
+    'ft ft'
+    ;
+}
+
+header{
+    grid-area: hd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1% 0 1%;
+    background-color: palevioletred;
+}
+
+.justimg{
+
+}
+.justimg img{
+    width: 48vw;
+    grid-area: bd;
+}
+
+#sek1{
+    grid-area: sk;
+    display: flex;
+
+}
+#sek1 img{
+    width: 7vw;
+    overflow-y: hidden;
+}
