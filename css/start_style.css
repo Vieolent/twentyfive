@@ -1,10 +1,13 @@
 #startgrid{
+    overflow-x: hidden;
+    display:grid;
     width: 98.7vw;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 15vh 100vh 80vh 30vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15vh 60vh 60vh 30vh;
     grid-template-areas: 
     'hd hd'
-    'sk bd'
+    'skt bd'
+    'skb bd'
     'a1 a2'
     'ft ft'
     ;
@@ -20,19 +23,38 @@ header{
 }
 
 .justimg{
-
+    grid-area: bd;
+    display:flex;
 }
 .justimg img{
-    width: 48vw;
-    grid-area: bd;
+    width: 50vw;
+    height:fit-content;
+    justify-content: left;
 }
 
-#sek1{
-    grid-area: sk;
+#sekt{
+    align-items: center;
+    grid-area: skt;
     display: flex;
+    justify-content:center;
+    size: 160%;
 
 }
-#sek1 img{
-    width: 7vw;
-    overflow-y: hidden;
+#sekb{
+    grid-area: skb;
+    display: flex;
+    justify-content: space-evenly;
+}
+#sekb img{
+
+    max-width: 32%;
+    overflow-x: hidden;
+
+}
+#sponsor{
+    grid-area: a1;
+}
+
+#summary{
+    grid-area: a2;
 }
