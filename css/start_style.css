@@ -1,36 +1,20 @@
-#startgrid{
-    overflow-x: hidden;
-    display:grid;
-    width: 98.7vw;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15vh 60vh 60vh 30vh;
-    grid-template-areas: 
-    'hd hd'
-    'skt bd'
-    'skb bd'
-    'a1 a2'
-    'ft ft'
-    ;
-}
 
-header{
-    grid-area: hd;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1% 0 1%;
-    background-color: palevioletred;
+#summary{
+    grid-area: a2;
+    background-color: white;
+    margin: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: palevioletred;
+    border-radius: 2vw;
+    padding: 10px;
 }
 
 .justimg{
     grid-area: bd;
     display:flex;
 }
-.justimg img{
-    width: 50vw;
-    height:fit-content;
-    justify-content: left;
-}
+
 
 #sekt{
     align-items: center;
@@ -44,10 +28,11 @@ header{
     grid-area: skb;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1%;
 }
-#sekb img{
-
-    max-width: 32%;
+.linkimg{
+    width: 16vw;
     overflow-x: hidden;
 
 }
@@ -55,6 +40,55 @@ header{
     grid-area: a1;
 }
 
-#summary{
-    grid-area: a2;
+
+@media screen and (min-width: 501px){
+    
+#startgrid{
+    overflow-x: hidden;
+    display:grid;
+    width: 98.7vw;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15vh auto auto auto auto;
+    grid-template-areas: 
+    'hd hd'
+    'skt bd'
+    'skb bd'
+    'a1 a2'
+    'ft ft'
+    ;
+}
+.justimg img{
+    width: 50vw;
+    height:fit-content;
+    justify-content: left;
+}
+
+}
+@media screen and (max-width: 500px){
+    #startgrid{
+        overflow-x: hidden;
+        display:grid;
+        width: 98.7vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh auto auto auto auto 40vh auto;
+        grid-template-areas: 
+        'hd'
+        'skt'
+        'skb'
+        'bd'
+        'a2'
+        'a1'
+        'ft'
+        ;
+    }
+
+    .justimg img{
+        width: 100%;
+        height:fit-content;
+    }
+    .linkimg{
+        width: 32vw;
+        overflow-x: hidden;
+    
+    }
 }
