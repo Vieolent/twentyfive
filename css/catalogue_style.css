@@ -1,46 +1,20 @@
-#cataloguegrid{
-    overflow-x: hidden;
-    display:grid;
-    width: 98.7vw;
-    grid-template-columns: 15% 85%;
-    grid-template-rows: 15vh auto auto auto;
-    grid-template-areas: 
-    'hd hd'
-    'fl sok'
-    'fl sek'
-    'ft ft'
-    ;
-}
-
-aside{
-    grid-area: fl;
-    border-right-width: 2px ;
-    border-right-color: black;
-    border-right-style: solid;
-    padding: 2%;
-}
-
 #sokning{
     grid-area: sok;
-    margin-left: 1%;
-    padding: 0px;
-    margin: 0px;
+    display: flex;
+    align-items: center;
 }
+#sokning h4{
+    margin-left: 1%;
+}
+
 section{
+    border-top-width: 2px;
+    border-top-color: black;
+    border-top-style:solid;
     grid-area: sek;
     overflow-x: scroll;
     display:flex;
     flex-direction: row;
-}
-
-.card{
-    display: flex;
-    background-color: #d87093;
-    flex-direction:column;
-    width: 50%;
-    height: fit-content;
-    margin: 1%;
-    padding: 1%;
 }
 
 .boxes{
@@ -53,7 +27,98 @@ section{
     overflow-x: hidden;
 }
 
-img{
+.card img{
     width: 80%;
     align-self: center;
+    border-color: black;
+    border-radius: 8%;
+    border-style: solid;
+}
+
+.boxes img{
+    width: 12px;
+    height: 12px;
+    border-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 501px){
+    #cataloguegrid{
+        overflow-x: hidden;
+        display:grid;
+        width: 98.7vw;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 22vh 15vh auto auto;
+        grid-template-areas: 
+        'hd hd'
+        'fl sok'
+        'fl sek'
+        'ft ft'
+        ;
+    }
+    aside{
+        grid-area: fl;
+        border-right-width: 2px ;
+        border-right-color: black;
+        border-right-style: solid;
+        padding: 5px;
+    }
+    .card{
+        display: flex;
+        background-color: #d87093;
+        flex-direction:column;
+        min-width: 22vw;
+        height:auto;
+        margin: 1%;
+        padding: 1%;
+        border-color: black;
+        border-radius: 2%;
+        border-style: solid;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #cataloguegrid{
+        overflow-x: hidden;
+        display:grid;
+        width: 98.7vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 22vh 11vh auto auto auto;
+        grid-template-areas: 
+        'hd'
+        'sok'
+        'fl'
+        'sek'
+        'ft'
+        ;
+    }
+    aside{
+        grid-area: fl;
+        border-right-width: 2px ;
+        border-right-color: black;
+        border-right-style: solid;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        position: fixed;
+        top: 0;
+        left: -120vw;
+        z-index: 10;
+    }
+    .card{
+        display: flex;
+        background-color: #d87093;
+        flex-direction:column;
+        min-width: 75vw;
+        height:auto;
+        margin: 1%;
+        padding: 1%;
+        border-color: black;
+        border-radius: 2%;
+        border-style: solid;
+    }
+
+
 }

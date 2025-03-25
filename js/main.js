@@ -9,3 +9,11 @@ function showMenu(){
     let layer = document.querySelector(".fade-layer");
     layer.classList.toggle("visible");
 }
+
+function showDropdown(){
+    let dropDown = document.querySelector("div.drop-button");
+    menu.classList.toggle("show");
+
+    let layer = document.querySelector(".fade-layer");
+    layer.classList.toggle("visible");
+}
