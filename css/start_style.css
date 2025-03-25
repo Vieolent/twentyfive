@@ -1,6 +1,13 @@
 
-#summary{
+#sum1{
+    grid-area: a1;
+
+}
+#sum2{
     grid-area: a2;
+}
+
+.summary{
     background-color: white;
     margin: 10px;
     border: 2px;
@@ -8,38 +15,41 @@
     border-color: palevioletred;
     border-radius: 2vw;
     padding: 10px;
+    height:fit-content;
 }
 
 .justimg{
-    grid-area: bd;
+
     display:flex;
+    height: fit-content;
 }
+#img1{
+    grid-area: bd;
+}
+
 
 
 #sekt{
     align-items: center;
     grid-area: skt;
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     size: 160%;
-
+    flex-direction: column;
 }
+
 #sekb{
     grid-area: skb;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 1%;
+    margin: 0px;
 }
 .linkimg{
     width: 16vw;
     overflow-x: hidden;
 
 }
-#sponsor{
-    grid-area: a1;
-}
-
 
 @media screen and (min-width: 501px){
     
@@ -48,12 +58,13 @@
     display:grid;
     width: 98.7vw;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 22vh auto auto auto auto;
+    grid-template-rows: 22vh auto auto auto auto auto;
     grid-template-areas: 
     'hd hd'
     'skt bd'
     'skb bd'
     'a1 a2'
+    'ps a2'
     'ft ft'
     ;
 }
@@ -61,6 +72,20 @@
     width: 50vw;
     height:fit-content;
     justify-content: left;
+}
+#img2{
+    grid-area: ps;
+    margin-bottom: 3%;
+    width: 49vw;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#sekt h2{
+    font-size: 200%;
+    margin: 0px;
+}
+#sekt p{
+    margin:0px;
 }
 
 }
@@ -70,13 +95,14 @@
         display:grid;
         width: 98.7vw;
         grid-template-columns: 1fr;
-        grid-template-rows: 22vh auto auto auto auto 40vh auto;
+        grid-template-rows: 22vh auto auto auto auto auto auto;
         grid-template-areas: 
         'hd'
         'skt'
         'skb'
         'bd'
         'a2'
+        'ps'
         'a1'
         'ft'
         ;
@@ -90,5 +116,17 @@
         width: 32vw;
         overflow-x: hidden;
     
+    }
+    #img2{
+        grid-area: ps;
+        margin-bottom: 3%;
+        width: 100vw;
+    }
+    #sekt h2{
+        font-size: 200%;
+        margin: 10px;
+    }
+    #sekt p{
+        margin:5px;
     }
 }
