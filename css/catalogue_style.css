@@ -2,10 +2,12 @@
     grid-area: sok;
     display: flex;
     align-items: center;
-
 }
 #sokning h4{
     margin-left: 1%;
+}
+aside ol li img{
+    width:13px;
 }
 
 section{
