@@ -10,97 +10,121 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dosis:wght@200..800&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dosis:wght@200..800&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="quizgrid">
-    <header>
-        <nav class="menu">
-            <h2>Navigera till:</h2>
-            <ul>
-              <li><a href="index.html">Start</a></li>
-              <br>
-              <li><a href="catalogue.html">Katalog</a></li>
-              <br>
-              <li><a href="quiz.html">Quiz</a></li>
-              <br>
-              <li><a href="#">Om oss</a></li>
-            </ul>
-          </nav>
-        
-        <div class="fade-layer"></div>
-        
-        <div class="wrapper">
+        <header>
+            <nav class="menu">
+                <h2>Navigera till:</h2>
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <br>
+                    <li><a href="catalogue.html">Katalog</a></li>
+                    <br>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <br>
+                    <li><a href="#">Om oss</a></li>
+                </ul>
+            </nav>
             
-            <div class="menu-button">
-                <i class="material-icons">menu</i>
+            <div class="fade-layer"></div>
+            
+            <div class="wrapper">
+                
+                <div class="menu-button">
+                    <i class="material-icons">menu</i>
+                </div>
             </div>
-        </div>
-        <img src="img/Plopp_logo.png" alt="Plopp">
-        <div></div>
-    </header>
-
-    <section id="intro">
-        <img src="img/lovely_hearts2.jpg" alt="Godishjärtan">
-        <div>
-        <h2>Upptäck vilken godissort du liknar mest!</h2>
-        <p>Ta vårat orginella test för att upptäcka hur bra din peronlighet matchar den av vissa godissorter du kan köpa i vår butik. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sit non quasi, porro, laudantium vero est quae quos harum dolor error eveniet natus voluptatibus laborum, dicta optio aliquam odio itaque.</p>
-    </div>
-        <img src="img/godissorter2.jpg" alt="Godissorter">
- 
-    </section>
-
-    <article class="question" id="q1">
-        <h4>Fråga 1: Vilken av dessa tycker du om mest?</h4>
-        <form>
-            <input type="radio" id="salt" name="favoritsmak">
-            <label for="salt">Salt</label><br>
-            <input type="radio" id="sott" name="favoritsmak">
-            <label for="sott">Sött</label><br>
-            <input type="radio" id="surt" name="favoritsmak">
-            <label for="surt">Surt</label>
-          </form>
-
-
-    </article>
-    <article class="question" id="q2">
-        <p>fråga2</p>
-    </article>
-    <article class="question" id="q3">
-        <p>fråga3</p>
-    </article>
-
-    <section id="result">
-        <p>result</p>
-    </section>
-
-
-
-
-
-
-
-    <footer>
-        <h4>Öppettider</h4>
-        <ul>
-            <li>Nån gång
-            </li>
-            <li>Nån annan gång
-            </li>
-            <li>Imorgon
-            </li>
-            <li>Igår
-            </li>
-        </ul>
-        <br>
+            <img src="img/Plopp_logo.png" alt="Plopp">
+            <div></div>
+        </header>
         
-        <p>Notera: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem placeat nisi nihil sed eum, doloribus voluptatum repellendus saepe nostrum inventore, architecto tenetur, fugiat reiciendis nemo praesentium recusandae cupiditate hic quisquam omnis sapiente rerum neque. Vi kan lagligt sno din själ. Nulla est excepturi voluptas possimus tempora! Sunt necessitatibus recusandae aliquid magnam eum debitis saepe, voluptas quam?</p>
-    </footer>
+        <section class="kant" id="intro">
+            <div id="nr1"> 
+            <img src="img/lovely_hearts2.jpg" alt="Godishjärtan" class="tplf">
+        </div>
+            <div class="punkter">
+                <h2>Upptäck vilken godissort du liknar mest!</h2>
+                <p>Ta vårat orginella test för att upptäcka hur bra din peronlighet matchar den av vissa godissorter du kan köpa i vår butik. Det här är ett höst vetenskapligt test som är väldigt rättvis och korrekt. Ta testet på din egna risk.</p>
+            </div>
+            <div id="nr2">
+            <img src="img/godissorter2.jpg" alt="Godissorter" class="tprg">
+        </div>
+            
+        </section>
+        
+        <article class="question box" id="q1">
+            <h4>Fråga 1: Vilken av dessa tycker du om mest?</h4>
+            <form>
+                <input type="radio" id="salt" name="favoritsmak">
+                <label for="salt">Salt</label><br>
+                <input type="radio" id="sott" name="favoritsmak">
+                <label for="sott">Sött</label><br>
+                <input type="radio" id="surt" name="favoritsmak">
+                <label for="surt">Surt</label><br>
+                <input type="radio" id="trakigt" name="favoritsmak">
+                <label for="trakigt">Ingen av dem</label>
+            </form>
+            
+            
+        </article>
+        <article class="question box" id="q2">
+            <h4>Fråga 2: Klicka i alla sakerna du tycker om</h4>
+            <p>Stranden: <input type="checkbox"> 
+                Skogen: <input type="checkbox"> 
+                Fjällen: <input type="checkbox">
+                Gruvorna: <input type="checkbox">
+                Rymden: <input type="checkbox">
+                Öknen: <input type="checkbox">
+                Bergen: <input type="checkbox">
+                Havet: <input type="checkbox">
 
-
-
-</div>
+            </p>      
+            
+        </article>
+        <article class="question box" id="q3">
+            <h4>Frågra 3: Hur social är du?</h4>
+            <div >
+                <p>Inte alls <input type="range" min="1" max="100" value="50" id="slider"> Väldigt</p>
+            </div>
+        </article>
+        
+        <section class="kant">
+            <div class="punktimg" id="nr3">
+            <img src="img/candy_eggs.jpg" alt="Godisägg" class="btlf">
+        </div >
+            <div class="punkter" id="result">
+            <h3>Du är:</h3>
+            <h5>Saltlakris</h5>
+            <p>Ingen gillar dig och det är gränsfall ifall du räknas som giftig</p>
+        </div>
+        <div class="punktimg" id="nr4">
+            <img src="img/lollipop.jpg" alt="Godisklubba" class="btrg">
+        </div>
+        </section>
+        
+        <footer>
+            <h4>Öppettider</h4>
+            <ul>
+                <li>Nån gång
+                </li>
+                <li>Nån annan gång
+                </li>
+                <li>Imorgon
+                </li>
+                <li>Igår
+                </li>
+            </ul>
+            <br>
+            
+            <p>Notera: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem placeat nisi nihil sed eum, doloribus voluptatum repellendus saepe nostrum inventore, architecto tenetur, fugiat reiciendis nemo praesentium recusandae cupiditate hic quisquam omnis sapiente rerum neque. Vi kan lagligt sno din själ. Nulla est excepturi voluptas possimus tempora! Sunt necessitatibus recusandae aliquid magnam eum debitis saepe, voluptas quam?</p>
+        </footer>
+        
+        
+        
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>

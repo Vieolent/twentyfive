@@ -3,19 +3,32 @@
     display:grid;
     width: 98.7vw;
     grid-template-columns: 100%;
-    grid-template-rows: 22vh auto auto auto auto auto auto;
-    grid-template-areas: 
-    'hd'
-    'it'
-    'f1'
-    'f2'
-    'f3'
-    'rs'
-    'ft'
-    ;
 }
 
-
+#slider{
+    width:50%;
+    -webkit-appearance: none;
+    appearance: none;
+    background:whitesmoke;
+    outline-color: #575a5e;
+    outline-style: solid;
+    border-radius: 5px;
+}
+#slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    background: #d87093;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px; 
+    background:#d87093;
+    cursor: pointer;
+}
+#slider::-moz-range-thumb  {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #d87093;
+}
 #q1{
     grid-area: f1;
 }
@@ -26,27 +39,139 @@
     grid-area: f3;
 }
 
-#intro{
-    grid-area: it;
+.kant{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     padding: 0px;
 }
-#intro div{
-    grid-area: it;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    width: 50vw;
-    padding: 0px 10px 0px 10px;
-}
-#intro img{
-    width:25vw;
-    height:auto;
 
-}
 #result{
     grid-area: rs;
 }
+#result h5{
+    font-size: 200%;
+    margin:5px;
+}
+
+.box h4{
+    margin: 4px;
+}
+
+
+
+@media screen and (min-width: 501px){
+    #quizgrid{
+        grid-template-rows: 22vh auto auto auto auto auto auto;
+        grid-template-areas: 
+        'hd'
+        'it'
+        'f1'
+        'f2'
+        'f3'
+        'rs'
+        'ft'
+        ;
+    }
+    #intro{
+        grid-area: it;
+    }
+    .punkter{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+        padding: 0px 10px 0px 10px;
+    }
+    .kant img{
+        width:25vw;
+        height:fit-content;
+    }
+    .punktimg{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    
+    .btlf{
+        border-top-right-radius: 5vw;
+        border-right-color: #575a5e;
+        border-right-style: solid;
+        border-top-color: #575a5e;
+        border-top-style: solid;
+    }
+    .btrg{
+        border-top-left-radius: 5vw;
+        border-left-color: #575a5e;
+        border-left-style: solid;
+        border-top-color: #575a5e;
+        border-top-style: solid;
+    }
+    .tplf{
+        border-bottom-right-radius: 5vw;
+        border-right-color: #575a5e;
+        border-right-style: solid;
+        border-bottom-color: #575a5e;
+        border-bottom-style: solid;
+        top:22vh;
+    }
+    .tprg{
+        border-bottom-left-radius: 5vw;
+        border-left-color: #575a5e;
+        border-left-style: solid;
+        border-bottom-color: #575a5e;
+        border-bottom-style: solid;
+        top:22vh;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    #quizgrid{
+        grid-template-rows: 22vh 400px auto 400px auto auto auto 400px auto 400px auto;
+        grid-template-areas: 
+        'hd'
+        'i1'
+        'it'
+        'i2'
+        'f1'
+        'f2'
+        'f3'
+        'i3'
+        'rs'
+        'i4'
+        'ft'
+        ;
+    }
+    .punkter{
+        grid-area: it;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    #q3 div{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .kant img{
+        width: 100vw;
+        height: fit-content;
+    }
+    #nr3{
+        grid-area: i3;
+    }
+    #nr4{
+        grid-area: i4;
+    }
+    #nr1{
+        grid-area: i1;
+    }
+    #nr2{
+        grid-area: i2;
+    }
+}
+
