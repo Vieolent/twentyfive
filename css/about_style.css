@@ -1,0 +1,24 @@
+#aboutgrid{
+    overflow-x: hidden;
+    display:grid;
+    width: 98.7vw;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 22vh auto auto auto;
+    grid-template-areas: 
+    'hd hd'
+    'jb kt'
+    'hs hs'
+    'ft ft'
+    ;
+}
+
+
+#historia{
+    grid-area: hs;
+}
+#jobb{
+    grid-area: jb;
+}
+#kontakt{
+    grid-area: kt;
+}
