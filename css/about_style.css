@@ -2,23 +2,73 @@
     overflow-x: hidden;
     display:grid;
     width: 98.7vw;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     grid-template-rows: 22vh auto auto auto;
     grid-template-areas: 
-    'hd hd'
-    'jb kt'
-    'hs hs'
-    'ft ft'
+    'hd'
+    'hs'
+    'ft'
     ;
 }
 
+#main{
+    grid-area: hs;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'jb kt'
+    'ht ht'
+    ;
+}
 
 #historia{
-    grid-area: hs;
+    grid-area: ht;
 }
 #jobb{
     grid-area: jb;
 }
 #kontakt{
     grid-area: kt;
+}
+#aboutgrid div section{
+    margin: 40px;
+    padding: 20px;
+    border: 6px;
+    border-style: double;
+    border-color: palevioletred;
+    border-radius: 2vw;
+}
+
+
+@media screen and (min-width: 501px){
+    #main{
+    background-image:url(../img/background_candy_mindre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'jb kt'
+    'ht ht'
+    ;
+    }
+
+}
+@media screen and (max-width: 500px){
+    #main{
+        background-image:url(../img/background_mobile_narrow.jpg);
+        background-attachment: fixed;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        'jb'
+        'kt'
+        'ht'
+        ;
+    }
+    #aboutgrid div section{
+        overflow-wrap: break-word;
+    }
 }

@@ -1,9 +1,8 @@
 document.querySelector(".fade-layer").addEventListener("click", showMenu)
 document.querySelector(".menu-button").addEventListener("click", showMenu)
-
+document.querySelector(".drop-button").addEventListener("click", showDropdown)
 
 function showMenu(){
-    console.log("click menu");
     let menu = document.querySelector("nav.menu");
     menu.classList.toggle("show");
     
@@ -11,11 +10,7 @@ function showMenu(){
     layer.classList.toggle("visible");
 }
 
-    document.querySelector(".drop-button").addEventListener("click", showDropdown)
-    
-    function showDropdown(){
-        console.log("click dropdown");
-        let aside = document.querySelector("aside");
-        aside.classList.toggle("appear");
-        
-    }    
+function showDropdown(){
+    let aside = document.querySelector("aside");
+    aside.classList.toggle("appear");
+}    

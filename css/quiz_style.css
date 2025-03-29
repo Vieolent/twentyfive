@@ -3,6 +3,16 @@
     display:grid;
     width: 98.7vw;
     grid-template-columns: 100%;
+    grid-template-rows: 22vh auto auto auto auto auto auto;
+    grid-template-areas: 
+    'hd'
+    'it'
+    'f1'
+    'f2'
+    'f3'
+    'rs'
+    'ft'
+    ;
 }
 
 #slider{
@@ -51,19 +61,8 @@
 
 
 @media screen and (min-width: 501px){
-    #quizgrid{
-        grid-template-rows: 22vh auto auto auto auto auto auto;
-        grid-template-areas: 
-        'hd'
-        'it'
-        'f1'
-        'f2'
-        'f3'
-        'rs'
-        'ft'
-        ;
-    }
-   
+    
+    
     .punkter{
         display: flex;
         justify-content: space-evenly;
@@ -79,7 +78,7 @@
     .punktimg{
         display: flex;
         flex-direction: column;
-
+        
     }
     
     .btlf{
@@ -88,7 +87,7 @@
         border-right-style: solid;
         border-top-color: #575a5e;
         border-top-style: solid;
- 
+        
     }
     .btrg{
         border-top-left-radius: 5vw;
@@ -96,7 +95,7 @@
         border-left-style: solid;
         border-top-color: #575a5e;
         border-top-style: solid;
-   
+        
     }
     .tplf{
         border-bottom-right-radius: 5vw;
@@ -128,18 +127,6 @@
 }
 
 @media screen and (max-width: 500px){
-    #quizgrid{
-        grid-template-rows: 22vh auto auto auto auto auto auto;
-        grid-template-areas: 
-        'hd'
-        'it'
-        'f1'
-        'f2'
-        'f3'
-        'rs'
-        'ft'
-        ;
-    }
     .punkter{
         display: flex;
         justify-content: space-evenly;

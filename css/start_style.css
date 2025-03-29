@@ -23,7 +23,6 @@
     grid-area: skt;
     display: flex;
     justify-content:space-evenly;
-    size: 160%;
     flex-direction: column;
 }
 

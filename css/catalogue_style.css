@@ -24,7 +24,6 @@ section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: -10px;
     margin: 1%;
     height:fit-content;
     overflow-x: hidden;
@@ -138,6 +137,7 @@ h3{
         border-radius: 2%;
         border-style: solid;
     }
+    
     .drop-button{
         cursor: pointer;
         display: inline;
@@ -145,3 +145,20 @@ h3{
 
 
 }
+/*
+                <div class="boxes">
+            
+                    <p>1: </p> <img src="img/checkbox.png" alt="checkad box">
+                    <p>2: </p> <img src="img/checkbox.png" alt="checkad box">
+                    <p>3: </p> <img src="img/checkbox.png" alt="checkad box">
+                    <p>7: </p> <img src="img/checkbox.png" alt="checkad box">
+                    <p>8: </p> <img src="img/checkbox.png" alt="checkad box">
+                    <p>9: </p> <img src="img/checkbox.png" alt="checkad box">
+                    <p>13: </p> <img src="img/checkbox.png" alt="checkad box">
+                    <p>15: </p> <img src="img/checkbox.png" alt="checkad box">
+                    <p>16: </p> <img src="img/checkbox.png" alt="checkad box">
+                    <p>17: </p> <img src="img/checkbox.png" alt="checkad box">
+                    <p>19: </p> <img src="img/checkbox.png" alt="checkad box">
+                    <p>20: </p> <img src="img/checkbox.png" alt="checkad box">
+                    </div>
+*/
