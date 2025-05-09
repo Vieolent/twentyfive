@@ -3,7 +3,7 @@ document.querySelector(".menu-button").addEventListener("click", showMenu)
 document.querySelector(".drop-button").addEventListener("click", showDropdown)
 
 function showMenu(){
-    let menu = document.querySelector("nav.menu");
+    let menu = document.querySelector(".menu");
     menu.classList.toggle("show");
     
     let layer = document.querySelector(".fade-layer");

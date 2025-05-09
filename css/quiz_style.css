@@ -123,6 +123,7 @@
         grid-area: rs;
         flex-direction: row;
         display: flex;
+        align-items: end;
     }
 }
 

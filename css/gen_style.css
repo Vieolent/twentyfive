@@ -20,8 +20,13 @@ body,ul{
     flex-direction: column;
     padding: 10px;
 }
+
 .menu li a{
     font-size: 120%;
+    color: black;
+}
+header a{
+    font-size: 150%;
     color: black;
 }
 
@@ -30,13 +35,7 @@ body,ul{
     display: inline;
 }
 
-.menu-button i.material-icons{
-    font-size: 2.5rem;
-}
 
-.show{
-    left: 0;
-}
 
 .fade-layer{
     position: fixed;
@@ -49,9 +48,7 @@ body,ul{
     z-index: 5;
 }
 
-.fade-layer.visible{
-    display: block;
-}
+
 
 footer{
     display:flex;
@@ -89,4 +86,31 @@ header img{
     border-radius: 2vw;
     padding: 10px;
     height:fit-content;
+}
+@media screen and (min-width: 501px){
+
+    .menu-button i.material-icons{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 500px){
+
+    .show{
+        left: 0;
+    }
+
+    
+    .fade-layer.visible{
+        display: block;
+    }
+    .menu-button i.material-icons{
+        font-size: 2.5rem;
+    }
+
+    .datormeny{
+        display:none;
+    }
 }
